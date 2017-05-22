@@ -77,8 +77,8 @@
     <script>
       // ADD YOUR TROVE API KEY
       var troveAPIKey = "cg6sn8lpjp7o8q19";
-      var troveApiUrl="http://api.trove.nla.gov.au";
-      //var troveApiUrl="https://trove-proxy.herokuapp.com/api";
+      //var troveApiUrl="http://api.trove.nla.gov.au";
+      var troveApiUrl="https://trove-proxy.herokuapp.com/api";
       var config = {};
       config.listSnippet = 50;
       config.directLinks = true;
@@ -95,7 +95,7 @@
            <li id="base-nav-featured"><a ng-href="#/topics/">FEATURED</a></li>
           <li id="base-nav-resources"><a ng-href="#/resources/">RESOURCES</a></li>
           <li><!-- EMPTY DIV FOR GREY LINE --></li>
-          <li><a class="grid-trigger" href="/#/topics">
+          <li><a class="grid-trigger" href="#/topics">
               <img id="index-icon-grid" src="img/icon-hamburger.png" height="100%" width="100%"></a>
            </li> <!-- primary exhibition trigger -->
        </ul>
@@ -169,7 +169,7 @@
   if (((navigator.userAgent.match(/OS X.*Safari/))|| (navigator.userAgent.match(/iPad/))) && ! navigator.userAgent.match(/Chrome/)) {
      document.body.className += 'safari';
   }
-  $('.grid-trigger').attr('href','/#/topics');
+  $('.grid-trigger').attr('href','#/topics');
 });
 </script>
 </body>
